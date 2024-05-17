@@ -1,36 +1,31 @@
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
-  padding: 2rem 0rem;
   background-color: ${({ theme }) => theme.colors.header};
+  padding: 4rem 0;
 `;
 
 export const Logo = styled.img`
-  width: 200px;
-  padding: 4rem 0rem;
-`;
-export const Div = styled.div`
-  display: flex;
-  gap: 0.5rem;
+  width: 300px;
+  padding: 2rem;
+  @media (max-width: ${({ theme }) => theme.responsive}) {
+    text-align: center;
+  }
 `;
 
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
   @media (max-width: ${({ theme }) => theme.responsive}) {
     flex-direction: column;
-    gap: 1rem;
   }
 `;
 
-export const Image = styled.img`
-  width: 300px;
+export const Image = styled(Logo)`
+  width: 350px;
   @media (max-width: ${({ theme }) => theme.responsive}) {
-    flex-direction: column;
-    gap: 1rem;
-    width: 400px;
+    margin: 2rem 0;
   }
 `;
 

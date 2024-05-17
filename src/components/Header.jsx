@@ -1,7 +1,7 @@
 import Button from "./styles/Button.styled";
 import Container from "./styles/Container.styled";
 import Flex from "./styles/Flex.styled";
-import StyledHeader, { Div, Logo, Nav, Image } from "./styles/Header.styled";
+import StyledHeader, { Logo, Nav, Image } from "./styles/Header.styled";
 
 const Header = () => {
   return (
@@ -9,10 +9,10 @@ const Header = () => {
       <Container>
         <Nav>
           <Logo src="./images/logo.png" />
-          <Div>
-            <Button color="true">Apply Courses</Button>
-            <Button bg="true">Talk to Adviser</Button>
-          </Div>
+          <div>
+            <Button color="#A62440">Apply Courses</Button>
+            <Button bg="#A62440">Talk to Adviser</Button>
+          </div>
         </Nav>
         <Flex>
           <div>
@@ -22,9 +22,9 @@ const Header = () => {
               micro class online with other trainees and learn coding skills
               with a highly-skilled instructor.
             </p>
-            <Button bg="true">Start Your New Carier</Button>
+            <Button bg="#A62440">Start Your New Carier</Button>
           </div>
-          <Image src="./images/hero.jpg"></Image>
+          <Image src="./images/hero.jpg" />
         </Flex>
       </Container>
     </StyledHeader>
