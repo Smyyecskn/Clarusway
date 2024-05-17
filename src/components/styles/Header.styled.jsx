@@ -25,4 +25,8 @@ export const Nav = styled.nav`
   }
 `;
 
+export const Image = styled.img`
+  width: 200px;
+`;
+
 export default StyledHeader;
