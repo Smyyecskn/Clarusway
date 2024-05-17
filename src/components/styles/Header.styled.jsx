@@ -26,7 +26,12 @@ export const Nav = styled.nav`
 `;
 
 export const Image = styled.img`
-  width: 200px;
+  width: 300px;
+  @media (max-width: ${({ theme }) => theme.responsive}) {
+    flex-direction: column;
+    gap: 1rem;
+    width: 400px;
+  }
 `;
 
 export default StyledHeader;
